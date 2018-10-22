@@ -1,0 +1,10 @@
+GL_LOG_FILE log. local time Mon Oct 22 17:53:48 2018
+
+starting GLFW 3.1.2 X11 GLX clock_gettime /dev/js XI Xf86vm sharedrenderer: Mesa DRI Intel(R) HD Graphics 5500 (Broadwell GT2) 
+version: 3.0 Mesa 11.2.0
+creating shader from shaders/test_vs.glsl...
+shader compiled. index 4
+creating shader from shaders/test_fs.glsl...
+shader compiled. index 5
+created programme 6. attaching shaders 4 and 5...
+program 6 GL_VALIDATE_STATUS = GL_TRUE

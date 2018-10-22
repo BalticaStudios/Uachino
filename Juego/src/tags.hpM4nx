@@ -1,0 +1,80 @@
+TOOLS_H	tools.h	2;"	d
+load_mesh	tools.h	/^bool load_mesh (const char* file_name, GLuint* vao, int* point_count);$/;"	p
+gameplay	tools.h	/^bool gameplay(float cam_speed, double elapsed_seconds, float *cam_pos, float *cam_yaw, float cam_yaw_speed);$/;"	p
+PI	tools.cpp	12;"	d	file:
+gameplay	tools.cpp	/^bool gameplay(float cam_speed, double elapsed_seconds, float *cam_pos, float *cam_yaw, float cam_yaw_speed){$/;"	f
+load_mesh	tools.cpp	/^bool load_mesh (const char* file_name, GLuint* vao, int* point_count) {$/;"	f
+enemigo	enemigo.cpp	/^enemigo::enemigo(char* filename){$/;"	f	class:enemigo
+atacar	enemigo.cpp	/^void enemigo::atacar(){$/;"	f	class:enemigo
+moverse	enemigo.cpp	/^void enemigo::moverse(){$/;"	f	class:enemigo
+morir	enemigo.cpp	/^void enemigo::morir(){$/;"	f	class:enemigo
+getvida	enemigo.cpp	/^int enemigo::getvida(){$/;"	f	class:enemigo
+getvao	enemigo.cpp	/^GLuint enemigo::getvao(){$/;"	f	class:enemigo
+getnumvertices	enemigo.cpp	/^int enemigo::getnumvertices(){$/;"	f	class:enemigo
+getpos	enemigo.cpp	/^glm::vec3 enemigo::getpos(){$/;"	f	class:enemigo
+getfilename	enemigo.cpp	/^char* enemigo::getfilename(){$/;"	f	class:enemigo
+_GL_UTILS_H_	gl_utils.h	16;"	d
+g_gl_width	gl_utils.h	/^extern int g_gl_width;$/;"	x
+g_gl_height	gl_utils.h	/^extern int g_gl_height;$/;"	x
+g_window	gl_utils.h	/^extern GLFWwindow* g_window;$/;"	x
+restart_gl_log	gl_utils.h	/^bool restart_gl_log ();$/;"	p
+gl_log	gl_utils.h	/^bool gl_log (const char* message, ...);$/;"	p
+gl_log_err	gl_utils.h	/^bool gl_log_err (const char* message, ...);$/;"	p
+start_gl	gl_utils.h	/^bool start_gl ();$/;"	p
+glfw_error_callback	gl_utils.h	/^void glfw_error_callback (int error, const char* description);$/;"	p
+glfw_window_size_callback	gl_utils.h	/^void glfw_window_size_callback (GLFWwindow* window, int width, int height);$/;"	p
+_update_fps_counter	gl_utils.h	/^void _update_fps_counter (GLFWwindow* window);$/;"	p
+parse_file_into_str	gl_utils.h	/^bool parse_file_into_str (const char* file_name, char* shader_str, int max_len);$/;"	p
+print_shader_info_log	gl_utils.h	/^void print_shader_info_log (GLuint shader_index);$/;"	p
+create_shader	gl_utils.h	/^bool create_shader (const char* file_name, GLuint* shader, GLenum type);$/;"	p
+is_programme_valid	gl_utils.h	/^bool is_programme_valid (GLuint sp);$/;"	p
+create_programme	gl_utils.h	/^bool create_programme (GLuint vert, GLuint frag, GLuint* programme);$/;"	p
+create_programme_from_files	gl_utils.h	/^GLuint create_programme_from_files ($/;"	p
+GL_LOG_FILE	gl_utils.cpp	20;"	d	file:
+MAX_SHADER_LENGTH	gl_utils.cpp	21;"	d	file:
+restart_gl_log	gl_utils.cpp	/^bool restart_gl_log () {$/;"	f
+gl_log	gl_utils.cpp	/^bool gl_log (const char* message, ...) {$/;"	f
+gl_log_err	gl_utils.cpp	/^bool gl_log_err (const char* message, ...) {$/;"	f
+start_gl	gl_utils.cpp	/^bool start_gl () {$/;"	f
+glfw_error_callback	gl_utils.cpp	/^void glfw_error_callback (int error, const char* description) {$/;"	f
+glfw_window_size_callback	gl_utils.cpp	/^void glfw_window_size_callback (GLFWwindow* window, int width, int height) {$/;"	f
+_update_fps_counter	gl_utils.cpp	/^void _update_fps_counter (GLFWwindow* window) {$/;"	f
+parse_file_into_str	gl_utils.cpp	/^bool parse_file_into_str ($/;"	f
+print_shader_info_log	gl_utils.cpp	/^void print_shader_info_log (GLuint shader_index) {$/;"	f
+create_shader	gl_utils.cpp	/^bool create_shader (const char* file_name, GLuint* shader, GLenum type) {$/;"	f
+print_programme_info_log	gl_utils.cpp	/^void print_programme_info_log (GLuint sp) {$/;"	f
+is_programme_valid	gl_utils.cpp	/^bool is_programme_valid (GLuint sp) {$/;"	f
+create_programme	gl_utils.cpp	/^bool create_programme (GLuint vert, GLuint frag, GLuint* programme) {$/;"	f
+create_programme_from_files	gl_utils.cpp	/^GLuint create_programme_from_files ($/;"	f
+ENEMIGO_H	enemigo.h	2;"	d
+enemigo	enemigo.h	/^class enemigo{$/;"	c
+vida	enemigo.h	/^        int vida;$/;"	m	class:enemigo
+vao	enemigo.h	/^        GLuint vao, vbo;$/;"	m	class:enemigo
+vbo	enemigo.h	/^        GLuint vao, vbo;$/;"	m	class:enemigo
+numvertices	enemigo.h	/^        int numvertices;$/;"	m	class:enemigo
+pos	enemigo.h	/^	glm::vec3 pos;$/;"	m	class:enemigo
+filename	enemigo.h	/^        char* filename;$/;"	m	class:enemigo
+enemigo	enemigo.h	/^        enemigo(char *filename);$/;"	p	class:enemigo
+atacar	enemigo.h	/^        void atacar();$/;"	p	class:enemigo
+moverse	enemigo.h	/^        void moverse();$/;"	p	class:enemigo
+morir	enemigo.h	/^        void morir();$/;"	p	class:enemigo
+getvida	enemigo.h	/^        int getvida();$/;"	p	class:enemigo
+getvao	enemigo.h	/^        GLuint getvao();$/;"	p	class:enemigo
+getnumvertices	enemigo.h	/^        int getnumvertices();$/;"	p	class:enemigo
+getpos	enemigo.h	/^	glm::vec3 getpos();$/;"	p	class:enemigo
+getfilename	enemigo.h	/^        char* getfilename();$/;"	p	class:enemigo
+setvida	enemigo.h	/^        void setvida(int vida);$/;"	p	class:enemigo
+setvao	enemigo.h	/^        void setvao(GLuint vao);$/;"	p	class:enemigo
+setnumvertices	enemigo.h	/^        void setnumvertices(int num);$/;"	p	class:enemigo
+setpos	enemigo.h	/^        void setpos(glm::vec3 p);$/;"	p	class:enemigo
+setfilename	enemigo.h	/^        void setfilename(char *f);$/;"	p	class:enemigo
+_USE_MATH_DEFINES	main.cpp	23;"	d	file:
+GL_LOG_FILE	main.cpp	33;"	d	file:
+VERTEX_SHADER_FILE	main.cpp	34;"	d	file:
+FRAGMENT_SHADER_FILE	main.cpp	35;"	d	file:
+MESH_FILE	main.cpp	38;"	d	file:
+g_gl_width	main.cpp	/^int g_gl_width = 1280;$/;"	v
+g_gl_height	main.cpp	/^int g_gl_height = 690;$/;"	v
+g_window	main.cpp	/^GLFWwindow* g_window = NULL;$/;"	v
+main	main.cpp	/^int main(){$/;"	f
+ONE_DEG_IN_RAD	main.cpp	65;"	d	file:

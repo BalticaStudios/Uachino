@@ -1,0 +1,5 @@
+Lab06:
+ 1) Repare la camara para que los movimientos S, A, D sean consistentes independiente del angulo de giro.
+ 2) Cree un suelo a base de triangulos. 
+ 3) Cree dos instancias de suzanne proximos uno del otro.
+ 4) Instale Blender y cargue una esfera y un cubo al programa.
