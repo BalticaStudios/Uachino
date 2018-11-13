@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Grafica</>
+    <title>Grafica</title>
   </head>
   <body>
 
