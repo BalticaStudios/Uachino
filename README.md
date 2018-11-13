@@ -1,14 +1,14 @@
 <html>
   <head>
-    Grafica
+    <title>Grafica</>
   </head>
   <body>
 
-Integrantes: Luis Guzman
-             Christian Matzner
-             Felipe Soto
-             Victor Moya
-             Manuel Jaramillo
+Integrantes: Luis Guzman</>
+             Christian Matzner</>
+             Felipe Soto</>
+             Victor Moya</>
+             Manuel Jaramillo</>
   </body>
 </html>
 
